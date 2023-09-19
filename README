@@ -1,1 +1,16 @@
+# Troubleshooting
+
+### Can't locate tests/test.pm
+
+If you're facing this error
+```
+Can't locate tests/test.pm in @INC (you may need to install the tests::test module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at ./configure line 100.
+```
+
+add psotnic path into PERL5LIB
+
+```
+export PERL5LIB=$HOME/apps/psotnic
+```
+
 Visit http://www.psotnic.com for more information.
