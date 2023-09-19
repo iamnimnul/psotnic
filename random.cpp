@@ -101,8 +101,8 @@ void srand(int a, int b, int c)
 
 int rand()
 {
-
-	return abs(xsrand.rand());
+	unsigned int rand = xsrand.rand();
+	return rand;
 }
 
 /**
